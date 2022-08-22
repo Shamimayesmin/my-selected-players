@@ -27,5 +27,5 @@ function getArrayLength(playerId){
     const table = document.getElementById(playerId);
     const totalRowCount = table.length;
     return totalRowCount
-    // console.log(totalRowCount)
+    
 }
