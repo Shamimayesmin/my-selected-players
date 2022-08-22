@@ -23,11 +23,6 @@
 
     //     });
 
-    
-    //     if(playerArray.length > 5){
-    //         alert('You cant add more players');
-    //         return;
-    //     }
          
     // }
 
