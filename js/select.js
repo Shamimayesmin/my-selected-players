@@ -1,10 +1,10 @@
 
- const playerArray = []
-
+ const playerArray = [];
 
  function displayName(player){
-    let totalPlayers = 0;
+    
     const tableBody = document.getElementById('total-players');
+    
     tableBody.innerHTML = '';
 
     for(let i = 0 ; i < player.length ; i++){
@@ -12,6 +12,24 @@
 
         const name = playerArray[i].playersName;
 
+
+
+    //     var buttons = document.getElementsByTagName('button');
+    // for(let i=0;i<buttons.length;i++){
+
+    //     buttons[i].addEventListener('click', function(event){
+    //         event.target.disabled = true;
+    //         // event.target.setAttribute('disabled',true);       
+
+    //     });
+
+    
+    //     if(playerArray.length > 5){
+    //         alert('You cant add more players');
+    //         return;
+    //     }
+         
+    // }
 
         const tr = document.createElement('tr');
 
@@ -23,37 +41,35 @@
         `;
         tableBody.appendChild(tr);
 
-        console.log(tableBody)
+        // console.log(tableBody)
 
     }
 
-
-    // const tr = document.createElement('tr');
-    // tr.innerHTML =`
-    //     <th></th>
-    //     <td>Total Price</td>
-    //     <td>${totalPrice}</td>
-        
-    // `;
-    // tableBody.appendChild(tr);
  }
-
-
-
-
-
-
-
-
-
-
-
+   
 
 
 function addToSelect(element){
     const playersName = element.parentNode.parentNode.children[0].innerText;
+    
+    
+        var buttons = document.getElementsByTagName('button');
+    for(let i=0;i<buttons.length;i++){
 
-    console.log(playersName)
+        buttons[i].addEventListener('click', function(event){
+            event.target.disabled = true;
+            // event.target.setAttribute('disabled',true);       
+
+        });
+
+    
+        if(playerArray.length > 4){
+            alert('You cant add more players');
+            return;
+        }
+         
+    }
+
 
 
     const playersObj = {
@@ -65,5 +81,10 @@ function addToSelect(element){
     // console.log(playerArray)
     //  console.log(playerArray.length);
 
+    // document.getElementById('total-players').innerText = playerArray.length
+
     displayName(playerArray);
 }
+
+
+
