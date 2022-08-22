@@ -11,19 +11,12 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     const nodeList = document.querySelectorAll("tr");
     const array = nodeList.length;
 
-
-    
-    
     const fivePlayerCost = perPlayerCost * array;
-
-    // console.log(fivePlayerCost)
-
 
     const previousExpenses = getTextFieldById('total-player-exps')
     
     // console.log(totalExpenses)
     const newTotalExpenses = previousExpenses + fivePlayerCost
-    // console.log(newTotalExpenses)
 
     setTextElementById('total-player-exps',newTotalExpenses)
 })
