@@ -41,8 +41,6 @@
         `;
         tableBody.appendChild(tr);
 
-        // console.log(tableBody)
-
     }
 
  }
@@ -77,11 +75,6 @@ function addToSelect(element){
         
     }
     playerArray.push(playersObj)
-
-    // console.log(playerArray)
-    //  console.log(playerArray.length);
-
-    // document.getElementById('total-players').innerText = playerArray.length
 
     displayName(playerArray);
 }
