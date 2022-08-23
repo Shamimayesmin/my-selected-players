@@ -12,6 +12,7 @@
 
         const name = playerArray[i].playersName;
 
+
         const tr = document.createElement('tr');
 
         // ${variable name}
@@ -42,6 +43,8 @@ function addToSelect(element){
         
     }
     playerArray.push(playersObj)
+
+    document.getElementById('player-number').innerText = playerArray.length
 
     displayName(playerArray);
 }
