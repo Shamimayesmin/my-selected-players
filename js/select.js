@@ -45,23 +45,28 @@
 function addToSelect(element){
     const playersName = element.parentNode.parentNode.children[0].innerText;
     
-    
-        var buttons = document.getElementsByTagName('button');
-    for(let i=0;i<buttons.length;i++){
-
-        buttons[i].addEventListener('click', function(event){
-            event.target.disabled = true;
-            // event.target.setAttribute('disabled',true);       
-
-        });
-
-    
-        if(playerArray.length > 4){
+    element.disabled = true;
+    if(playerArray.length > 4){
             alert('You cant add more players');
             return;
         }
+    
+    //     var buttons = document.getElementsByTagName('button');
+    // for(let i=0;i<buttons.length;i++){
+
+    //     buttons[i].addEventListener('click', function(event){
+    //         event.target.disabled = true;
+    //         // event.target.setAttribute('disabled',true);       
+
+    //     });
+
+    
+    //     if(playerArray.length > 4){
+    //         alert('You cant add more players');
+    //         return;
+    //     }
          
-    }
+    // }
 
 
 
