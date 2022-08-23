@@ -12,20 +12,6 @@
 
         const name = playerArray[i].playersName;
 
-
-
-    //     var buttons = document.getElementsByTagName('button');
-    // for(let i=0;i<buttons.length;i++){
-
-    //     buttons[i].addEventListener('click', function(event){
-    //         event.target.disabled = true;
-    //         // event.target.setAttribute('disabled',true);       
-
-    //     });
-
-         
-    // }
-
         const tr = document.createElement('tr');
 
         // ${variable name}
@@ -47,28 +33,9 @@ function addToSelect(element){
     
     element.disabled = true;
     if(playerArray.length > 4){
-            alert('You cant add more players');
+            alert('You cant add more than five players');
             return;
         }
-    
-    //     var buttons = document.getElementsByTagName('button');
-    // for(let i=0;i<buttons.length;i++){
-
-    //     buttons[i].addEventListener('click', function(event){
-    //         event.target.disabled = true;
-    //         // event.target.setAttribute('disabled',true);       
-
-    //     });
-
-    
-    //     if(playerArray.length > 4){
-    //         alert('You cant add more players');
-    //         return;
-    //     }
-         
-    // }
-
-
 
     const playersObj = {
         playersName: playersName,
